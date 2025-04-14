@@ -1,0 +1,52 @@
+Script started on 2025-04-14 17:31:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="210" LINES="17"]
+[0;32m@zettl019 [0m➜ [1;34m/workspaces/homework-3-mongo-zettl019/homework3_part1 [0;36m([1;31mmain[0;36m) [0m$ mongo < mongo_test_q3.js
+MongoDB shell version v3.6.8
+connecting to: mongodb://127.0.0.1:27017
+Implicit session: session { "id" : UUID("7baa9479-12c9-4236-bf18-864bed05ab21") }
+MongoDB server version: 3.6.8
+switched to db acmeLoans
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("67fd4673be49f1a000cb2d7e")
+}
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+{
+	"_id" : ObjectId("67fd45e58de5bf00b2f76db0"),
+	"applicationNumber" : "A1001",
+	"name" : "Alice Johnson",
+	"zipcode" : "55401",
+	"status" : "accepted",
+	"notes" : [
+		{
+			"type" : "subphase",
+			"phase" : "credit check",
+			"task" : "Check FICO",
+			"message" : "Passed with score 720",
+			"timestamp" : ISODate("2025-04-14T17:29:09.310Z")
+		},
+		{
+			"type" : "term",
+			"message" : "Approved for $50,000 at 3.2% interest over 5 years",
+			"timestamp" : ISODate("2025-04-14T17:29:09.313Z")
+		},
+		{
+			"type" : "subphase",
+			"phase" : "credit check",
+			"task" : "Check FICO",
+			"message" : "Passed with score 720",
+			"timestamp" : ISODate("2025-04-14T17:31:31.521Z")
+		},
+		{
+			"type" : "term",
+			"message" : "Approved for $50,000 at 3.2% interest over 5 years",
+			"timestamp" : ISODate("2025-04-14T17:31:31.523Z")
+		}
+	]
+}
+bye
+[0;32m@zettl019 [0m➜ [1;34m/workspaces/homework-3-mongo-zettl019/homework3_part1 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2025-04-14 17:31:33+00:00 [COMMAND_EXIT_CODE="0"]
