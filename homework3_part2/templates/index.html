@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Financial Loan Portal</title>
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+    <h1>Acme Financial Loan Portal</h1>
+
+    <h2>Submit Application</h2>
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="address" placeholder="Address">
+    <input type="text" id="zipcode" placeholder="Zipcode">
+    <button onclick="submitApplication()">Submit</button>
+
+    <h2>Applications List</h2>
+    <button onclick="fetchApplications()">Show All Applications</button>
+    <ul id="applicationList"></ul>
+
+    <h2>Check Status</h2>
+    <input type="text" id="statusAppId" placeholder="Application ID">
+    <button onclick="checkStatus()">Check Status</button>
+    <ul id="statusList"></ul>
+
+    <h2>Change Status</h2>
+    <input type="text" id="changeAppId" placeholder="Application ID">
+    <select id="statusSelect">
+        <option value="received">Received</option>
+        <option value="processing">Processing</option>
+        <option value="accepted">Accepted</option>
+        <option value="rejected">Rejected</option>
+    </select>
+    <input type="text" id="note" placeholder="Note (e.g., task, terms, reason)">
+    <button onclick="changeStatus()">Update Status</button>
+
+    <h2>All Notes</h2>
+    <input type="text" id="notesAppId" placeholder="Application ID">
+    <button onclick="fetchNotes()">Show All Notes</button>
+    <ul id="notesList"></ul>
+</body>
+</html>
